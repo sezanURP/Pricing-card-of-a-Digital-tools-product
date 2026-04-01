@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.\nPerfect for writers, marketers, and businesses.",
+    "price": 29,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/1015/300/200",
+    "status": "Best seller",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"]
+  },
+  {
+    "id": 2,
+    "title": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.\nInstant download and easy customization.",
+    "price": 49,
+    "period": "one-time",
+    "image": "https://picsum.photos/id/201/300/200",
+    "status": "Popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"]
+  },
+  {
+    "id": 3,
+    "title": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.\nHigh-quality assets updated daily.",
+    "price": 19,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/251/300/200",
+    "status": "New",
+    "features": ["10M+ assets", "Commercial use", "No attribution"]
+  },
+  {
+    "id": 4,
+    "title": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.\nNo coding required.",
+    "price": 79,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/180/300/200",
+    "status": "Popular",
+    "features": ["50+ automations", "API access", "Custom workflows"]
+  },
+  {
+    "id": 5,
+    "title": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.\nAI-powered suggestions included.",
+    "price": 15,
+    "period": "one-time",
+    "image": "https://picsum.photos/id/201/300/200",
+    "status": "New",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"]
+  },
+  {
+    "id": 6,
+    "title": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.\nSave hours every week.",
+    "price": 39,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/133/300/200",
+    "status": "Best seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"]
+  },
+  {
+    "id": 7,
+    "title": "Logo Maker AI",
+    "description": "Create professional logos in minutes with advanced AI.\nMultiple styles and instant variations.",
+    "price": 25,
+    "period": "one-time",
+    "image": "https://picsum.photos/id/180/300/200",
+    "status": "Popular",
+    "features": ["Unlimited generations", "Full brand kit", "Vector export"]
+  },
+  {
+    "id": 8,
+    "title": "Video Editor AI",
+    "description": "Turn raw footage into cinematic videos automatically.\nAI cuts, effects, and voiceovers.",
+    "price": 49,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/251/300/200",
+    "status": "New",
+    "features": ["Auto editing", "Text to video", "4K export", "Royalty-free music"]
+  },
+  {
+    "id": 9,
+    "title": "SEO Content Writer",
+    "description": "Generate SEO-optimized articles and blog posts that rank.\nKeyword research included.",
+    "price": 35,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/1015/300/200",
+    "status": "Best seller",
+    "features": ["SEO optimization", "Plagiarism checker", "Meta descriptions", "WordPress export"]
+  },
+  {
+    "id": 10,
+    "title": "AI Presentation Maker",
+    "description": "Create stunning presentations in seconds from a simple prompt.\nProfessional designs included.",
+    "price": 22,
+    "period": "monthly",
+    "image": "https://picsum.photos/id/133/300/200",
+    "status": "Popular",
+    "features": ["AI slide generation", "100+ themes", "Export to PowerPoint", "Presenter notes"]
+  }
+]
