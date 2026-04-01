@@ -27,7 +27,7 @@ const Models = ({ promiseData }) => {
 
 
 
-      <div className="models-container  grid md:grid-cols-3  my-10  mx-auto items-center gap-10 justify-center">
+      <div className="models-container  grid md:grid-cols-3  my-10  mx-auto items-center gap-7 justify-center p-10 ">
         {models.map((data) => (
           <div>
             <div className="card w-96  shadow-sm">
