@@ -1,7 +1,7 @@
 import React from "react";
-import roket from "../../../public/rocket.png";
-import user from "../../../public/user.png";
-import product from "../../../public/package.png";
+import roket from "/rocket.png";
+import user from "/user.png";
+import product from "/package.png";
 const Start = () => {
   return (
     <div>

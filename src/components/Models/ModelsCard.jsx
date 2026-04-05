@@ -1,16 +1,31 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 const ModelsCard = ( { data, cartItems, setCartItems } ) => {
    
    const [isBuyNow, setIsBuyNow] = useState(false);
-  //  console.log(data);
+  
 
    const handleBuyNow = () => {
       setIsBuyNow(true);
+
+      const isAlreadyInCart = cartItems.some((item) => item.id === data.id);
+      if (isAlreadyInCart) {
+        toast.info(`${data.title} is already in the cart!`),{
+        position: "top-right",
+        autoClose: 2000,
+        
+      };
+        return;
+      }
       setCartItems([...cartItems, data]);
-   }
-  
+      toast.success(`${data.title} added to cart!`,{
+        position: "top-right",
+        autoClose: 2000,
+        
+      });
+    };
 
    return (
 

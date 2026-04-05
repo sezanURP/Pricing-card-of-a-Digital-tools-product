@@ -11,7 +11,7 @@ import Start from "./components/Start_section/Start";
 import Stat from "./components/Stat/Stat";
 
 const modelsPromise = async () => {
-  const response = await fetch("/public/Models.json");
+  const response = await fetch("/Models.json");
   return response.json();
 };
 

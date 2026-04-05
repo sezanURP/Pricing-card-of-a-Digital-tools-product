@@ -1,5 +1,5 @@
 import React from "react";
-import banImg from "../../../public/banner.png";
+import banImg from "/banner.png";
 import { CircleDotDashed } from 'lucide-react';
 
 const Banner = () => {
