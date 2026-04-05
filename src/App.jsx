@@ -1,43 +1,69 @@
-
-import './App.css'
-import Banner from './components/Banner/Banner';
-import Footer from './components/Footer/Footer';
-import Footer_2 from './components/footer_2/Footer_2';
-import Models from './components/Models/Models';
-import Navbar from './components/navbar/Navbar';
-import Pricing from './components/PricingCard/Pricing';
-import Start from './components/Start_section/Start';
-import Stat from './components/Stat/Stat';
+import { useState } from "react";
+import "./App.css";
+import Banner from "./components/Banner/Banner";
+import Carts from "./components/Cart/Carts";
+import Footer from "./components/Footer/Footer";
+import Footer_2 from "./components/footer_2/Footer_2";
+import Models from "./components/Models/Models";
+import Navbar from "./components/navbar/Navbar";
+import Pricing from "./components/PricingCard/Pricing";
+import Start from "./components/Start_section/Start";
+import Stat from "./components/Stat/Stat";
 
 const modelsPromise = async () => {
-  const response = await fetch('/public/Models.json');
+  const response = await fetch("/public/Models.json");
   return response.json();
 };
 
 const promiseData = modelsPromise();
 function App() {
-  
+  const [activeTab, setActiveTab] = useState("Products");
+  const[cartItems, setCartItems] = useState([]);
 
+  // console.log(cartItems);
   return (
     <>
-      <Navbar/>
+      <Navbar />
 
-      <Banner/>
+      <Banner />
 
-      <Stat/>
+      <Stat />
+      <div className="tabs tabs-box rounded-full flex justify-center mb-10 bg-transparent">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full"
+          aria-label="Products"
+          defaultChecked
+          onClick={() => setActiveTab("Products")}
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full"
+          aria-label={`Cart (${cartItems.length})`}
+          onClick={() => setActiveTab("Cart")}
+        />
+      </div>
+      {activeTab === "Products" && (
+        <Models
+          fallback={<span className="loading loading-bars loading-xl"></span>}
+          promiseData={promiseData} cartItems={cartItems} setCartItems={setCartItems}
+        />
+      )}
 
-      <Models fallback={<span className="loading loading-bars loading-xl"></span>} promiseData={promiseData}/>
+      {activeTab === "Cart" && <Carts cartItems={cartItems} setCartItems={setCartItems} />}
 
-      <Start/>
+      <Start />
 
-      <Pricing/>
+      <Pricing />
+      
 
-      <Footer/>
+      <Footer />
 
-      <Footer_2/>
-
+      <Footer_2 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 
-const ModelsCard = ( { data } ) => {
-   // console.log(data.data);
+const ModelsCard = ( { data, cartItems, setCartItems } ) => {
+   
    const [isBuyNow, setIsBuyNow] = useState(false);
+  //  console.log(data);
 
    const handleBuyNow = () => {
       setIsBuyNow(true);
+      setCartItems([...cartItems, data]);
    }
-   
+  
 
    return (
 
