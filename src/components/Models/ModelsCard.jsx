@@ -80,7 +80,7 @@ const ModelsCard = ({ data, cartItems, setCartItems }) => {
             <div className="mt-6">
               <button
                 onClick={handleBuyNow}
-                className="btn btn-primary btn-block rounded-3xl"
+                className={`btn btn-primary ${isBuyNow ? "bg-green-500 text-white" : ""} btn-block rounded-3xl`}
               >
                 {isBuyNow ? "Added to Cart" : "Buy Now"}
               </button>

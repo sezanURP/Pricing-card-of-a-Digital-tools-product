@@ -10,13 +10,16 @@ const Pricing = () => {
        Choose the plan that fits your needs. Upgrade or downgrade anytime.
       </p>
     
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-10">
+    <div className="grid grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-3  gap-6 mt-10">
+
       <div className="card w-90 bg-base-100 shadow-sm">
         <div className="card-body">
-          <span className="badge badge-xs badge-warning  ">Most Popular</span>
+          <span className="badge badge-lg text-gray-500 font-bold  "></span>
           <div className="flex justify-between">
-            <h2 className="text-3xl font-bold">Premium</h2>
-            <span className="text-xl">$29/mo</span>
+            <h2 className="text-3xl font-bold">Starter 
+              <p className="text-sm font-medium text-gray-500">Perfect for getting started</p>
+            </h2>
+            <span className="text-xl">$0/month</span>
           </div>
           <ul className="mt-6 flex flex-col gap-2 text-xs">
             <li>
@@ -70,62 +73,10 @@ const Pricing = () => {
               </svg>
               <span>Batch processing capabilities</span>
             </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-success"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>AI-driven image enhancements</span>
-            </li>
-            <li className="opacity-50">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-base-content/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="line-through">Seamless cloud integration</span>
-            </li>
-            <li className="opacity-50">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-base-content/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="line-through">
-                Real-time collaboration tools
-              </span>
-            </li>
+            
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block">Subscribe</button>
+            <button className="btn btn-primary btn-block">Get Started Free</button>
           </div>
         </div>
       </div>
@@ -136,10 +87,13 @@ const Pricing = () => {
             Most Popular
           </span>
           <div className="flex justify-between">
-            <h2 className="text-3xl font-bold">Premium</h2>
-            <span className="text-xl">$29/mo</span>
+            <h2 className="text-3xl text-white font-bold">Pro
+              <p className="text-sm font-medium text-gray-300">Best for professionals</p>
+            </h2>
+
+            <span className="text-xl text-white">$29/month</span>
           </div>
-          <ul className="mt-6 flex flex-col gap-2 text-xs">
+          <ul className="mt-6 flex flex-col gap-2 text-xs text-white">
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +162,7 @@ const Pricing = () => {
               </svg>
               <span>AI-driven image enhancements</span>
             </li>
-            <li className="opacity-50">
+            <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 me-2 inline-block text-base-content/50"
@@ -223,40 +177,24 @@ const Pricing = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span className="line-through">Seamless cloud integration</span>
+              <span >Seamless cloud integration</span>
             </li>
-            <li className="opacity-50">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-base-content/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="line-through">
-                Real-time collaboration tools
-              </span>
-            </li>
+      
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block">Subscribe</button>
+            <button className="btn btn-primary btn-block">Get Pro Trial</button>
           </div>
         </div>
       </div>
 
       <div className="card w-90 bg-base-100 shadow-sm">
         <div className="card-body">
-          <span className="badge badge-xs badge-warning">Most Popular</span>
+          
           <div className="flex justify-between">
-            <h2 className="text-3xl font-bold">Premium</h2>
-            <span className="text-xl">$29/mo</span>
+            <h2 className="text-3xl  font-bold">Enterprise
+              <p className="text-sm font-medium text-gray-500 ">Advanced features for teams & Business </p>
+            </h2>
+            <span className="text-xl ">$99/month</span>
           </div>
           <ul className="mt-6 flex flex-col gap-2 text-xs">
             <li>
@@ -327,7 +265,7 @@ const Pricing = () => {
               </svg>
               <span>AI-driven image enhancements</span>
             </li>
-            <li className="opacity-50">
+            <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 me-2 inline-block text-base-content/50"
@@ -342,9 +280,9 @@ const Pricing = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span className="line-through">Seamless cloud integration</span>
+              <span>Seamless cloud integration</span>
             </li>
-            <li className="opacity-50">
+            <li >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 me-2 inline-block text-base-content/50"
@@ -359,13 +297,13 @@ const Pricing = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span className="line-through">
+              <span>
                 Real-time collaboration tools
               </span>
             </li>
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block">Subscribe</button>
+            <button className="btn btn-primary btn-block">Contact Sales</button>
           </div>
         </div>
       </div>

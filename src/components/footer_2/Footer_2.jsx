@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Footer_2 = () => {
   return (
     <>
-      <div className=" bg-[#101727] footer-2-container flex flex-nowrap gap-10 justify-evenly py-10 text-white">
+      <div className=" bg-[#101727] footer-2-container flex flex-col sm:flex-row gap-4 sm:gap-10 justify-evenly py-10 text-white">
         <div className="card">
           <h1 className="text-3xl font-bold">DigiTools</h1>
           <p>
@@ -42,38 +42,22 @@ const Footer_2 = () => {
           <p className="text-2xl font-bold">Social Links</p>
           <div className="flex gap-4 text-2xl mt-4">
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaSquareFacebook />
               </a>
             </span>
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a>
             </span>
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
             </span>
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
             </span>

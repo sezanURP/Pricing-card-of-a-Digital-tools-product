@@ -28,7 +28,7 @@ function App() {
       <Banner />
 
       <Stat />
-      <div className="tabs tabs-box w-[25%] mx-auto gap-7 rounded-full flex   justify-center mb-2 mt-30 bg-gray-300">
+      <div className="tabs tabs-box sm:w-[25%] mx-auto gap-6 rounded-full flex   justify-center mb-2 mt-30 bg-gray-300">
         <input
           type="radio"
           name="my_tabs_1"

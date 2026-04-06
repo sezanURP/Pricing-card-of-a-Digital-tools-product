@@ -1,6 +1,6 @@
 import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
-import CartUpdate from "../CartUpdate";
+
 
 const navItems = [
   {
@@ -39,7 +39,7 @@ const ShoppingCartWithBadge = ({  itemCount }) => (
 );
 const Navbar = ({cartItems}) => {
 
-const cartItemCount = cartItems?.length || 0;
+const cartItemCount = cartItems.length || 0;
 
 
 
@@ -100,7 +100,7 @@ const cartItemCount = cartItems?.length || 0;
           <div className="sm: md:">
             <a className="btn">Login</a>
           </div>
-          <div className="mr-11 md:px-5">
+          <div className="sm:mr-11 md:px-5">
             <a
               className="btn rounded-full text-white  lg:font-medium"
               style={{
