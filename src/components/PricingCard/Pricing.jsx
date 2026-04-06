@@ -2,8 +2,16 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="grid grid-cols-3 mt-40">
-      <div className="card w-96 bg-base-100 shadow-sm">
+    <div>
+      <h2 className="text-4xl font-semibold md:text-5xl md:font-bold  text-center mt-17 mb-7 md:mb-10 md:mt-20 mx-auto">
+        Simple, Transparent Pricing
+      </h2>
+      <p className="text-center text-md  mb-10">
+       Choose the plan that fits your needs. Upgrade or downgrade anytime.
+      </p>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-10">
+      <div className="card w-90 bg-base-100 shadow-sm">
         <div className="card-body">
           <span className="badge badge-xs badge-warning  ">Most Popular</span>
           <div className="flex justify-between">
@@ -122,9 +130,11 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="card w-96 bg-blue-500 shadow-sm">
+      <div className="card w-90 bg-blue-500 shadow-sm">
         <div className="card-body">
-          <span className="badge badge-lg rounded-2xl bg-amber-200 badge-warning absolute -top-4 left-1/2 -translate-x-1/2">Most Popular</span>
+          <span className="badge badge-lg rounded-2xl bg-amber-200 badge-warning absolute -top-4 left-1/2 -translate-x-1/2">
+            Most Popular
+          </span>
           <div className="flex justify-between">
             <h2 className="text-3xl font-bold">Premium</h2>
             <span className="text-xl">$29/mo</span>
@@ -241,7 +251,7 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="card w-96 bg-base-100 shadow-sm">
+      <div className="card w-90 bg-base-100 shadow-sm">
         <div className="card-body">
           <span className="badge badge-xs badge-warning">Most Popular</span>
           <div className="flex justify-between">
@@ -359,6 +369,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

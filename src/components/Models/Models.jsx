@@ -21,7 +21,7 @@ const Models = ({ promiseData, cartItems, setCartItems }) => {
       {/* name of each tab group should be unique */}
       
 
-      <div className="models-container  grid md:grid-cols-3  my-10  mx-auto items-center gap-7 justify-center p-10 ">
+      <div className="models-container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10  mx-auto items-center gap-7 justify-center p-10 ">
         {models.map((data) => (
         
           <ModelsCard key={data.id} data={data} cartItems={cartItems} setCartItems={setCartItems}/>

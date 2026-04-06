@@ -1,5 +1,5 @@
 import React from "react";
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from "lucide-react";
 
 const navItems = [
   {
@@ -53,7 +53,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
             >
               <li>
                 {navItems.map((item) => (
@@ -64,26 +64,26 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className=" font-bold text-blue-500 sm:text-3xl sm:pl-40">DigiTools</a>
+          <a className=" font-bold text-blue-500 sm:text-3xl sm:pl-10 lg:pl-40">
+            DigiTools
+          </a>
         </div>
         <div className="navbar-start  hidden lg:flex">
           <ul className="flex flex-nowrap menu menu-horizontal px-1">
-          
-              {navItems.map((item) => (
-                  <li className="font-medium text-gray-600 gap-2">
+            {navItems.map((item) => (
+              <li className="font-medium text-gray-600 gap-2">
                 <a key={item.id} href={item.href}>
                   {item.label}
                 </a>
-                 </li>
-              ))}
-           
+              </li>
+            ))}
           </ul>
         </div>
         <div className="navbar-end">
           <div className="mr-2">
             <ShoppingCart />
           </div>
-          <div className="">
+          <div className="sm: md:">
             <a className="btn">Login</a>
           </div>
           <div className="mr-11 md:px-5">

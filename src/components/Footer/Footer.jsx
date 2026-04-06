@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className=" my-10 text-center bg-blue-500 text-white py-10">
+      <div className=" mt-20  text-center bg-blue-500 text-white py-10">
         <h1 className="text-4xl font-bold mb-5">
           Ready to Transform Your Workflow?
         </h1>

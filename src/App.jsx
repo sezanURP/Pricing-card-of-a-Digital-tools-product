@@ -32,7 +32,7 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full"
+          className="tab rounded-full bg-blue-500 text-white"
           aria-label="Products"
           defaultChecked
           onClick={() => setActiveTab("Products")}
@@ -40,7 +40,7 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full"
+          className="tab rounded-full bg-blue-500 text-white"
           aria-label={`Cart (${cartItems.length})`}
           onClick={() => setActiveTab("Cart")}
         />
