@@ -1,5 +1,6 @@
 import React from "react";
-import { ShoppingCart } from "lucide-react";
+import { TiShoppingCart } from "react-icons/ti";
+import CartUpdate from "../CartUpdate";
 
 const navItems = [
   {
@@ -28,7 +29,20 @@ const navItems = [
     href: "/faq",
   },
 ];
-const Navbar = () => {
+const ShoppingCartWithBadge = ({  itemCount }) => (
+  <div className="relative inline-block">
+    <TiShoppingCart size={40} />
+    <span className="badge badge-error  absolute -top-2 -right-2  text-white text-xs px-2 py-0 rounded-full">
+      {itemCount}
+    </span>
+  </div>
+);
+const Navbar = ({cartItems}) => {
+
+const cartItemCount = cartItems?.length || 0;
+
+
+
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -80,8 +94,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="mr-2">
-            <ShoppingCart />
+          <div className="mr-5">
+          <ShoppingCartWithBadge itemCount={cartItemCount} />
           </div>
           <div className="sm: md:">
             <a className="btn">Login</a>

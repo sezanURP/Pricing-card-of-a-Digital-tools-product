@@ -10,7 +10,7 @@ const Models = ({ promiseData, cartItems, setCartItems }) => {
 
   return (
     <div>
-      <h2 className="text-5xl font-bold text-center mb-10 mt-20 mx-auto">
+      <h2 className="text-5xl font-bold text-center mb-10 mt-5 mx-auto">
         Premium Digital Tools
       </h2>
       <p className="text-center text-lg mb-10">

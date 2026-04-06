@@ -23,16 +23,16 @@ function App() {
   // console.log(cartItems);
   return (
     <>
-      <Navbar />
+      <Navbar cartItems={cartItems} />
 
       <Banner />
 
       <Stat />
-      <div className="tabs tabs-box rounded-full flex justify-center mb-10 bg-transparent">
+      <div className="tabs tabs-box w-[25%] mx-auto gap-7 rounded-full flex   justify-center mb-2 mt-30 bg-gray-300">
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full bg-blue-500 text-white"
+          className={`tab px-10 rounded-full ${activeTab === "Products" ? "text-lg font-bold bg-blue-500 text-white" : ""}`}
           aria-label="Products"
           defaultChecked
           onClick={() => setActiveTab("Products")}
@@ -40,11 +40,13 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full bg-blue-500 text-white"
+          className={`tab px-10 rounded-full ${activeTab === "Cart" ? "text-lg font-bold bg-blue-500 text-white" : ""}`}
           aria-label={`Cart (${cartItems.length})`}
           onClick={() => setActiveTab("Cart")}
         />
       </div>
+
+
       {activeTab === "Products" && (
         <Models
           fallback={<span className="loading loading-bars loading-xl"></span>}
