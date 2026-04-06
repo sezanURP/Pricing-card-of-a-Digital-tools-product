@@ -2,7 +2,9 @@
 
 Digital platform is a modern, integrated digital hub designed to simplify and accelerate your daily technical tasks. Our mission is to provide an all-in-one solution that brings complex digital processes directly to your fingertips through an intuitive and seamless user interface.
 
-Technology uses in this services:
+
+
+##Technology uses in this services:
 
 - Artificial Intiligence
 - Javascript 
