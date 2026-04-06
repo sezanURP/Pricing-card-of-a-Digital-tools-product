@@ -4,7 +4,7 @@ Digital platform is a modern, integrated digital hub designed to simplify and ac
 
 
 
-##Technology uses in this services:
+## Technology uses in this services:
 
 - Artificial Intiligence
 - Javascript 
