@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Footer_2 = () => {
   return (
     <>
-      <div className=" bg-[#101727] footer-2-container flex flex-col sm:flex-row gap-4 sm:gap-10 justify-evenly py-10 text-white">
+      <div className=" bg-[#101727] footer-2-container flex flex-col pl-7 sm:flex-row gap-4 sm:gap-10 justify-evenly py-10 text-white">
         <div className="card">
           <h1 className="text-3xl font-bold">DigiTools</h1>
           <p>
